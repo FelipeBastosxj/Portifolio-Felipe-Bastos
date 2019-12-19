@@ -222,8 +222,22 @@ body{
     background-color: rgba(71, 68, 233, 0.2);
     transition: 1s all
   }
+/* RESPONSIVO */
 
+@media only screen and (max-width: 850px){
+  .estrutura{
+    display: block;
+    width: 100%;
+  }
+  .side-bar{
+    max-width: 100%;
+    width: 100%;
+  }
+  body{
+    overflow: auto;
+  }
   
+}
 
 
   

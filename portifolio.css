@@ -217,10 +217,10 @@ body{
   .squares{
     display: none;
   }
-  .imagens{
+  .imagens img:nth-child(3){
     display: none;
   }
-  .barra-de-progesso{
+  .barra-de-progesso p:nth-child(3){
     display: none;
   }
 }

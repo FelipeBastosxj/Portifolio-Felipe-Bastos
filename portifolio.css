@@ -217,6 +217,12 @@ body{
   .squares{
     display: none;
   }
+  .imagens{
+    display: none;
+  }
+  .barra-de-progesso{
+    display: none;
+  }
 }
 
 

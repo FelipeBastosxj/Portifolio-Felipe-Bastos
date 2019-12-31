@@ -213,14 +213,13 @@ body{
   .informacoes{
     width: 100%;
     height: 100vh;
+
   }
+  
   .squares{
     display: none;
   }
-  .imagens img:nth-child(3){
-    display: none;
-  }
-  .barra-de-progesso p:nth-child(3){
+  .barra-de-progesso, .imagens{
     display: none;
   }
 }

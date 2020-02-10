@@ -6,7 +6,6 @@ body{
 }
 .estrutura{
     display: flex;
-    height: 100vh;
 }
 .side-bar{
     display: flex;
@@ -17,13 +16,15 @@ body{
     width:345px;
     align-items: center;
     z-index: 5;
+    height: 100vh;
 }
 .informacoes{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: none;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-    background-color:#00CED1;
     width: 100%;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 .side-bar img{
     max-width: 100%;
@@ -43,7 +44,7 @@ body{
     margin-left: 18px;
 }
 .subtitulo{
-    font-size: 16px;
+    font-size: 15px;
     margin-left: -62px;
     margin-top: -10px;
 }
@@ -52,6 +53,17 @@ body{
     text-decoration: none;
     color: black;
     font-weight: 500;
+}
+
+.b1{
+  color: black;
+  font-weight: 100;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  margin-left: -6px;
+  cursor: pointer;
+  outline: none;
 }
 .lista{
     margin-left: -20px;
@@ -87,6 +99,10 @@ body{
   margin-top: -20px;
 }
 
+.b1:hover{
+  color: greenyellow;
+  transition: 0.5s all;
+}
 /*Animações*/
 
 @keyframes fade{
@@ -109,7 +125,7 @@ body{
     max-height: auto;
     width:125px;
     height: 125px;
-    margin: 0px 30px -225px 30px;
+    margin: 120px 130px 0px 85px;
 }
 
 .imagens{
@@ -129,7 +145,7 @@ body{
 
   @keyframes loading3 {
     from { width: 0 }
-    to { width: 30% }
+    to { width: 50% }
   }
   
   .barra-de-progesso{
@@ -141,7 +157,7 @@ body{
     position: relative;
     height: 8px;
     width: 125px;
-    margin: 18px 30px -25px 30px;
+    margin: 18px 130px 0px 85px;
   }
   
   .barra-de-progesso p:nth-child(1)::after {
@@ -183,6 +199,8 @@ body{
   .botaom{
     display: flex;
     justify-content: center;
+    margin-top: 150px;
+    margin-left: -80px;
   }
 
   .botaom a{
@@ -204,25 +222,73 @@ body{
     display: block;
   }
   .side-bar{
+    height: 100%;
     max-width: 100%;
     width: 100%;
   }
   body{
     overflow: auto;
+    
   }
   .informacoes{
+    font-size: 20px;
     width: 100%;
-    height: 100vh;
-
   }
-  
+  .botaom a{
+    margin-top: 20px;
+  }
   .squares{
     display: none;
   }
-  .barra-de-progesso, .imagens{
+  .barra-de-progesso{
     display: none;
+  }
+  .imagens{
+   display: none;
+  }
+  .segura-c{
+    height: 100%;
+  }
+  .ativo{
+    display: flex;
+  }
+  .botaom{
+    margin-left: 15px;
   }
 }
 
+/* TABS */
 
-  
+.segura-c{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #00CED1;
+}
+
+/* informação 2*/
+
+.secundario{
+  display: none;
+  flex-direction: column;
+  background-color:#00CED1;
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.box-estru{
+  margin-left: 18px;
+}
+
+.secundario h1{
+  margin-top: -5px;
+  font-size: 50px;
+}
+.secundario p,h3{
+  font-size: 25px;
+}   
+
+.ativo{
+  display: flex;
+  flex-direction: column;
+}

@@ -1,5 +1,6 @@
 botoes = document.querySelectorAll('.b1')
 partes = document.querySelectorAll('.s1')
+console.log(partes)
 
 function tabs(index){
     partes.forEach(e =>{
@@ -9,7 +10,8 @@ function tabs(index){
 }
 
 botoes.forEach((item, posicao)=>{
-    item.addEventListener('click', ()=>{
+    item.addEventListener('click', (e)=>{
+        e.preventDefault()
         tabs(posicao)
     })
 })

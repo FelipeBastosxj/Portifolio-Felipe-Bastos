@@ -275,6 +275,24 @@ body{
 #terceiro-projeto,#quarto-projeto{
   margin-top: 0px !important;
 }
+
+.mascara-p1 img{
+  height: 30px !important;
+  width: 30px !important;
+}
+#m1m{
+width: 35px !important;
+height: 29px !important;
+margin-left: -5px;
+}
+
+.mobile{
+  padding-right: 10px;
+}
+
+.mascara-p1{
+  width: 350px !important;
+}
 }
 
 /* TABS */

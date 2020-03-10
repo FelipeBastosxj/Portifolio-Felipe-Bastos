@@ -16,7 +16,6 @@ body{
   width:345px;
   align-items: center;
   z-index: 5;
-  height: 100vh;
 }
 .informacoes{
   display: none;
@@ -53,6 +52,7 @@ body{
   text-decoration: none;
   color: black;
   font-weight: 500;
+  transition: 0.5s all;
 }
 
 .lista{
@@ -136,6 +136,17 @@ transition: 0.5s all;
 @keyframes loading3 {
   from { width: 0 }
   to { width: 50% }
+}
+
+@keyframes entrar{
+  From{
+      opacity: 0;
+      transform: translate3d(0,300px,0);
+  }
+  to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+  }
 }
 
 .barra-de-progesso{
@@ -251,6 +262,19 @@ body{
   margin-left: 15px;
   margin-bottom: 50px;
 }
+.box-estru2{
+  grid-template-rows: 1fr 1fr 1fr 1fr !important; 
+  grid-template-columns: 1fr !important;
+  padding: 20px 0px 0px 0px !important;
+}
+.box-estru2 img{
+  width: 350px !important;
+
+}
+
+#terceiro-projeto,#quarto-projeto{
+  margin-top: 0px !important;
+}
 }
 
 /* TABS */
@@ -290,22 +314,70 @@ font-size: 25px;
 display: none;
 animation-name: fade;
 animation-duration: 1s;
+
 }
 
 .box-estru2{
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr;
-height: 100vh;
 align-items: center;
 justify-items: center;
+padding: 20px ;
+grid-gap: 10px;
+width: 100%;
+background-color: #00CED1;
 }
 
 
 .ativo{ 
 display: flex; 
 flex-direction: column;
-background-color: #00CED1;
 max-width: 100%;
 }
 
+#first-projeto{
+  width: 470px;
+  position: relative;
+}
+
+.hi{
+ height:250px;
+}
+
+.box-estru2 img{
+  height: 250px;
+  width: 470px;
+}
+
+#terceiro-projeto,#quarto-projeto{
+  margin-top: 25px;
+}
+
+/*Projetos estilização*/
+
+.mascara-p1{
+  position: absolute;
+  width: 472px;
+  height: 250px;
+  top: 1px;
+  bottom: 0;
+  background: linear-gradient(#1a18184f, #221e1a5e);
+  animation: entrar .7s ease-in-out;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.exibir:hover .mascara-p1{
+  display: flex;  
+}
+
+.exibir{
+  overflow: hidden;
+  position: relative;
+}
+
+#modi{
+height: 250px;
+}

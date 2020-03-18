@@ -1,6 +1,5 @@
 botoes = document.querySelectorAll('.b1')
 partes = document.querySelectorAll('.s1')
-console.log(partes)
 
 function tabs(index){
     partes.forEach(e =>{

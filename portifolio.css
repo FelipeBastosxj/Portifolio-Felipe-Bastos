@@ -425,6 +425,7 @@ margin-left: -5px;
   box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 0.39);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   transition: 0s all;
+  font-size: 20px;
 }
 
 #b-p1:active{

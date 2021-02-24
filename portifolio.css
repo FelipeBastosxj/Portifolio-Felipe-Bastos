@@ -272,6 +272,11 @@ body{
   grid-template-rows: 1fr 1fr 1fr 1fr !important; 
   grid-template-columns: 1fr !important;
   padding: 20px 0px 0px 0px !important;
+  background-image: url(./imagens/pexels-lukas-574071.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
 }
 .box-estru2 img{
   width: 350px !important;
@@ -342,11 +347,6 @@ font-size: 25px;
 display: none;
 animation-name: fade;
 animation-duration: 1s;
-height: 100vh;
-background-image: url(./imagens/pexels-lukas-574071.jpg);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
 }
 
 .box-estru2{
@@ -358,7 +358,6 @@ justify-items: center;
 padding: 20px ;
 grid-gap: 10px;
 width: 100%;
-
 }
 
 

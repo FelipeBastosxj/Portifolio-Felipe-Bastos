@@ -3,6 +3,7 @@ body{
   padding:0;
   font-family: Segoe UI Light,Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
   overflow: hidden;
+  background-color: black;
 }
 .estrutura{
   display: flex;

@@ -16,6 +16,7 @@ body{
   width:345px;
   align-items: center;
   z-index: 5;
+  height: 100vh;
 }
 .informacoes{
   display: none;
@@ -65,9 +66,9 @@ body{
 }
 .lista p::after{
   content: '';
-width: 140px;
-height: 4px;
-background: greenyellow;
+  width: 140px;
+  height: 4px;
+  background: greenyellow;
   display: block;
   border-radius: 5px;
   margin: 0 auto;
@@ -195,6 +196,9 @@ transition: 0.5s all;
   justify-content: center;
   font-size: 30px;
   margin-left: 18px;
+  background-color: black;
+  color: white;
+  font-weight: 900;
 }
 
 .botaom{
@@ -208,8 +212,10 @@ transition: 0.5s all;
   border: solid 3px rgba(71, 68, 233, 1);
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: transparent;
-  color: rgba(71, 68, 233, 1);
+  background-color:  rgba(71, 68, 233, 1);
+  color: white;
+  box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 0.39);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
 }
 
 .botaom a:hover{
@@ -218,7 +224,7 @@ transition: 0.5s all;
 }
 /* RESPONSIVO */
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 1264px){
 .estrutura{
   display: block;
 }
@@ -302,7 +308,10 @@ display: flex;
 flex-direction: column;
 width: 100%;
 height: 100vh;
-background-color: #00CED1;
+background-image: url(./imagens/pexels-lukas-574071.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 /* informação 2*/
@@ -313,6 +322,7 @@ flex-direction: column;
 width: 100%;
 animation-name: fade;
 animation-duration: 1s;
+color: white;
 }
 .box-estru{
 margin-left: 18px;
@@ -344,7 +354,7 @@ justify-items: center;
 padding: 20px ;
 grid-gap: 10px;
 width: 100%;
-background-color: #00CED1;
+
 }
 
 
@@ -352,7 +362,7 @@ background-color: #00CED1;
 display: flex; 
 flex-direction: column;
 max-width: 100%;
-background-color: #00CED1;
+height: 100vh;
 }
 
 #first-projeto{
@@ -411,6 +421,7 @@ width: 60px;
 height: 48px;
 margin-left: -5px;
 }
+
 .img-masc{
   display: flex;
 }

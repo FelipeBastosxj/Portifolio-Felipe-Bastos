@@ -342,7 +342,11 @@ font-size: 25px;
 display: none;
 animation-name: fade;
 animation-duration: 1s;
-
+height: 100vh;
+background-image: url(./imagens/pexels-lukas-574071.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .box-estru2{

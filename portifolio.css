@@ -127,17 +127,17 @@ transition: 0.5s all;
 
 @keyframes loading1 {
   from { width: 0 }
-  to { width: 90% }
+  to { width: 95% }
 }
 
 @keyframes loading2 {
   from { width: 0 }
-  to { width: 75% }
+  to { width: 90% }
 }
 
 @keyframes loading3 {
   from { width: 0 }
-  to { width: 50% }
+  to { width: 85% }
 }
 
 @keyframes entrar{
